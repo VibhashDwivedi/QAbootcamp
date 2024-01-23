@@ -10,7 +10,9 @@ class Navigation:
      def __init__(self):
           chrome_service = Service("C:/Users/HP/Desktop/chromedriver.exe")
           options = webdriver.ChromeOptions()
-          self.driver = webdriver.Chrome(service=chrome_service, options=options)
+          prefs = {"download.default_directory": "/Users/HP/Downloads"}
+          options.add_experimental_option("prefs", prefs)
+          self.driver = webdriver.Chrome(service=chrome_service, options = options)
 
      def get_driver(self):
           return self.driver
