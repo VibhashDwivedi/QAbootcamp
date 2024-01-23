@@ -23,3 +23,6 @@ Selenium Advanced consists of advanced concepts listed below:
 - Handling upload and download
 - Handling Drop down
 - Selenium Actions
+  - hover
+  - drag drop
+  - slide
